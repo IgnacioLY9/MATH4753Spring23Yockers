@@ -1,14 +1,18 @@
-#' Title
+#' Plot function
 #'
-#' @param x vector containing data points
+#' @param x vector with horizontal values
+#' @param y vector with vertical values
+#' @param title main title of the graph
+#' @param xlabel x label of the graph
+#' @param ylabel y label of the graph
 #'
-#' @importFrom stats sd
-#'
-#' @return vector containing respecting z scores of elements in the input vector
+#' @return
 #' @export
 #'
 #' @examples
-#' findZ(1:20)
-findZ <- function(x) {
-  x-mean(x)/sd(x)
+#' \dontrun{fancyplot(spruce$BHDiameter, spruce$Height,
+#'   title = "class", xlabel = "is", ylabel = "fun")}
+fancyplot <- function(x, y, title, xlabel, ylabel) {
+  plot(y ~ x, main = title, xlab = xlabel, ylab = ylabel, pch = 21, bg = "BLUE", xlim = c(0, 1.1*max(x)),
+       ylim = c(0, 1.1*max(y)), cex = 1.2)
 }
