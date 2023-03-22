@@ -6,7 +6,7 @@
 #'
 #' @importFrom graphics abline points
 #' @importFrom stats optimize pbinom
-#' @
+#'
 #' @return
 #' @export
 #'
