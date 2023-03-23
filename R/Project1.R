@@ -1,18 +1,17 @@
-#' Title
+#' @title ntickets
 #'
 #' @param N number of seats on the plane
 #' @param gamma probability of overbooking
 #' @param p probability a person shows up for the flight
 #'
-#' @importFrom graphics abline points
-#' @importFrom stats optimize pbinom
+#'@importFrom graphics abline points
+#'@importFrom stats optimize pbinom
 #'
 #' @return
 #' @export
 #'
 #' @examples
 #' ntickets(N = 200, gamma = .02, p = .05)
-utils::globalVariables(c("x"))
 
 ntickets <- function(N, gamma, p) {
   nprime <- N*10
