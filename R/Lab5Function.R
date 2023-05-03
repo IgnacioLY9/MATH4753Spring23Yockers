@@ -7,7 +7,7 @@
 #'@importFrom graphics barplot
 #'@importFrom grDevices rainbow
 #'
-#' @return
+#' @return a binomial simulation with the given input values
 #' @export
 #'
 #' @examples

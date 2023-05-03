@@ -1,4 +1,4 @@
-#' Title
+#' normal probability
 #'
 #' @param a quantile
 #' @param mu mean of normal distribution
@@ -7,7 +7,7 @@
 #'@importFrom graphics curve polygon text
 #'@importFrom stats dnorm pnorm
 #'
-#' @return
+#' @return normal curve with shaded region left of quantile. Area to the left of the quantile is also calculated
 #' @export
 #'
 #' @examples

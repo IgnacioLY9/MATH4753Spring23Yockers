@@ -5,7 +5,7 @@
 #'
 #'@importFrom graphics barplot
 #'
-#' @return
+#' @return a layered bar plot of x and y values
 #' @export
 #'
 #' @examples

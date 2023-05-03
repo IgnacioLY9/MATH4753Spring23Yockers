@@ -7,7 +7,7 @@
 #'@importFrom graphics abline points
 #'@importFrom stats optimize pbinom
 #'
-#' @return
+#' @return returns number of tickets to be sold using normal and binomial distributions
 #' @export
 #'
 #' @examples

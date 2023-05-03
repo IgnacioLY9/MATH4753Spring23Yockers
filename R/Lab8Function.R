@@ -8,7 +8,7 @@
 #'@importFrom graphics hist lines
 #'@importFrom stats density dunif runif
 #'
-#' @return
+#' @return returns a histogram of sample means from a uniform distribution. Shows theoretical distribution and actual distribution
 #' @export
 #'
 #' @examples

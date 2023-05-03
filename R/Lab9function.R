@@ -1,4 +1,4 @@
-#' myboot2
+#' bootstrap ci
 #'
 #' @param iter number of samples from initial sample
 #' @param x vector equal to the initial sample
@@ -10,7 +10,7 @@
 #' @importFrom graphics segments
 #' @importFrom stats quantile
 #'
-#' @return
+#' @return histogram of bootstrap sample statistic with mean and confidence interval
 #' @export
 #'
 #' @examples

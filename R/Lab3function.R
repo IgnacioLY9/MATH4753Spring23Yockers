@@ -6,7 +6,7 @@
 #' @param xlabel x label of the graph
 #' @param ylabel y label of the graph
 #'
-#' @return
+#' @return a scatter plot with with points corresponding to ordered pairs made from the x and y vectors
 #' @export
 #'
 #' @examples

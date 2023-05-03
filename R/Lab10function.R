@@ -1,16 +1,20 @@
-#' Title
+#' Maximum Likelihood
 #'
-#' @param lfun distribution of population
+#' @param lfun distribution of population, given as a function defined elsewhere
 #' @param x vector of samples
-#' @param param unknown population parameter
+#' @param param unknown population parameter, given as a sequence of possible values
 #' @param ... additional plot parameters
 #'
 #' @importFrom graphics axis
 #'
-#' @return
+#' @return graph of the log of the likelihood function with maximum shown with a vertical line. Also returns the exact value
 #' @export
 #'
 #' @examples
+#' y <- c(4,6,7,6,5)
+#'logpoiss=function(x,param) log(dpois(x,lambda=param))
+#'mymaxlik(x=y,param=seq(0,10,length=1000),lfun=logpoiss,xlab=expression(lambda),main="Poisson",
+#'cex.main=2)
 mymaxlik=function(lfun,x,param,...){
   # how many param values are there?
   np=length(param)
